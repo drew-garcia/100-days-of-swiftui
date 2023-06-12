@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4788D0002A37B7C50013B35A /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4788CFFF2A37B7C50013B35A /* start.txt */; };
 		47F5DC742A3779AC00B0CDA4 /* WordScrambleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F5DC732A3779AC00B0CDA4 /* WordScrambleApp.swift */; };
 		47F5DC762A3779AC00B0CDA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F5DC752A3779AC00B0CDA4 /* ContentView.swift */; };
 		47F5DC782A3779AD00B0CDA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47F5DC772A3779AD00B0CDA4 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4788CFFF2A37B7C50013B35A /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = start.txt; path = WordScramble/start.txt; sourceTree = SOURCE_ROOT; };
 		47F5DC702A3779AC00B0CDA4 /* WordScramble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordScramble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F5DC732A3779AC00B0CDA4 /* WordScrambleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordScrambleApp.swift; sourceTree = "<group>"; };
 		47F5DC752A3779AC00B0CDA4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 		47F5DC722A3779AC00B0CDA4 /* WordScramble */ = {
 			isa = PBXGroup;
 			children = (
+				4788CFFF2A37B7C50013B35A /* start.txt */,
 				47F5DC732A3779AC00B0CDA4 /* WordScrambleApp.swift */,
 				47F5DC752A3779AC00B0CDA4 /* ContentView.swift */,
 				47F5DC772A3779AD00B0CDA4 /* Assets.xcassets */,
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47F5DC7B2A3779AD00B0CDA4 /* Preview Assets.xcassets in Resources */,
+				4788D0002A37B7C50013B35A /* start.txt in Resources */,
 				47F5DC782A3779AD00B0CDA4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
