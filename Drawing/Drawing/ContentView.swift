@@ -7,58 +7,85 @@
 
 import SwiftUI
 
-struct Checkerboard: Shape {
-    var rows: Int
-    var columns: Int
+struct ColorCyclingRectangle: View {
+    var amount = 0.0
+    var steps = 100
     
-    var animatableData: AnimatablePair<Double, Double> {
-        get {
-           AnimatablePair(Double(rows), Double(columns))
-        }
+    var gradientStartX = 0.5
+    var gradientStartY = 0.0
 
-        set {
-            rows = Int(newValue.first)
-            columns = Int(newValue.second)
-        }
-    }
+    var gradientEndX = 0.5
+    var gradientEndY = 0.5
 
-    func path(in rect: CGRect) -> Path {
-        var path = Path()
-
-        // figure out how big each row/column needs to be
-        let rowSize = rect.height / Double(rows)
-        let columnSize = rect.width / Double(columns)
-
-        // loop over all rows and columns, making alternating squares colored
-        for row in 0..<rows {
-            for column in 0..<columns {
-                if (row + column).isMultiple(of: 2) {
-                    // this square should be colored; add a rectangle here
-                    let startX = columnSize * Double(column)
-                    let startY = rowSize * Double(row)
-
-                    let rect = CGRect(x: startX, y: startY, width: columnSize, height: rowSize)
-                    path.addRect(rect)
-                }
+    var body: some View {
+        ZStack {
+            ForEach(0..<steps) { value in
+                Rectangle()
+                    .inset(by: Double(value))
+                    .strokeBorder(
+                        LinearGradient(
+                            gradient: Gradient(colors: [
+                                color(for: value, brightness: 1),
+                                color(for: value, brightness: 0.5)
+                            ]),
+                            startPoint: UnitPoint(x: gradientStartX, y: gradientStartY),
+                            endPoint: UnitPoint(x: gradientEndX, y: gradientEndY)
+                        ),
+                        lineWidth: 2
+                    )
             }
         }
+        .drawingGroup()
+    }
 
-        return path
+    func color(for value: Int, brightness: Double) -> Color {
+        var targetHue = Double(value) / Double(steps) + amount
+
+        if targetHue > 1 {
+            targetHue -= 1
+        }
+
+        return Color(hue: targetHue, saturation: 1, brightness: brightness)
     }
 }
 
 struct ContentView: View {
-    @State private var rows = 4
-    @State private var columns = 4
+    @State private var colorCycle = 0.0
+    @State private var gradientStartX = 0.5
+    @State private var gradientStartY = 0.0
+    @State private var gradientEndX = 0.5
+    @State private var gradientEndY = 0.5
 
     var body: some View {
-        Checkerboard(rows: rows, columns: columns)
-            .onTapGesture {
-                withAnimation(.linear(duration: 3)) {
-                    rows = 8
-                    columns = 16
-                }
+        VStack {
+            ColorCyclingRectangle(amount: colorCycle, gradientStartX: gradientStartX, gradientStartY: gradientStartY, gradientEndX: gradientEndX, gradientEndY: gradientEndY)
+                .frame(width: 300, height: 300)
+
+            HStack {
+                Text("Color")
+                Slider(value: $colorCycle)
             }
+            
+            HStack {
+                Text("Start X")
+                Slider(value: $gradientStartX)
+            }
+
+            HStack {
+                Text("Start Y")
+                Slider(value: $gradientStartY)
+            }
+
+            HStack {
+                Text("End X")
+                Slider(value: $gradientEndX)
+            }
+
+            HStack {
+                Text("End Y")
+                Slider(value: $gradientEndY)
+            }
+        }
     }
 }
 
