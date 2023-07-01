@@ -7,22 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		478230372A50722400C97DDE /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478230362A50722400C97DDE /* FilteredList.swift */; };
+		4782303A2A5073D600C97DDE /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 478230382A5073D600C97DDE /* CoreDataProject.xcdatamodeld */; };
+		4782303D2A5074C200C97DDE /* Candy+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4782303B2A5074C200C97DDE /* Candy+CoreDataClass.swift */; };
+		4782303E2A5074C200C97DDE /* Candy+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4782303C2A5074C200C97DDE /* Candy+CoreDataProperties.swift */; };
 		4785E5CC2A4F1A07004EFA1E /* CoreDataProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4785E5CB2A4F1A07004EFA1E /* CoreDataProjectApp.swift */; };
 		4785E5CE2A4F1A07004EFA1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4785E5CD2A4F1A07004EFA1E /* ContentView.swift */; };
 		4785E5D02A4F1A08004EFA1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4785E5CF2A4F1A08004EFA1E /* Assets.xcassets */; };
 		4785E5D32A4F1A08004EFA1E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4785E5D22A4F1A08004EFA1E /* Preview Assets.xcassets */; };
 		47BCCAA42A4F1AA900BA77B4 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BCCAA32A4F1AA900BA77B4 /* DataController.swift */; };
-		47BCCAB62A4F26AE00BA77B4 /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 47BCCAB42A4F26AE00BA77B4 /* CoreDataProject.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		478230362A50722400C97DDE /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredList.swift; sourceTree = "<group>"; };
+		478230392A5073D600C97DDE /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
+		4782303B2A5074C200C97DDE /* Candy+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4782303C2A5074C200C97DDE /* Candy+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4785E5C82A4F1A07004EFA1E /* CoreDataProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4785E5CB2A4F1A07004EFA1E /* CoreDataProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectApp.swift; sourceTree = "<group>"; };
 		4785E5CD2A4F1A07004EFA1E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4785E5CF2A4F1A08004EFA1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4785E5D22A4F1A08004EFA1E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		47BCCAA32A4F1AA900BA77B4 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
-		47BCCAB52A4F26AE00BA77B4 /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +61,15 @@
 		4785E5CA2A4F1A07004EFA1E /* CoreDataProject */ = {
 			isa = PBXGroup;
 			children = (
+				4782303B2A5074C200C97DDE /* Candy+CoreDataClass.swift */,
+				4782303C2A5074C200C97DDE /* Candy+CoreDataProperties.swift */,
+				478230382A5073D600C97DDE /* CoreDataProject.xcdatamodeld */,
 				4785E5CB2A4F1A07004EFA1E /* CoreDataProjectApp.swift */,
 				4785E5CD2A4F1A07004EFA1E /* ContentView.swift */,
+				478230362A50722400C97DDE /* FilteredList.swift */,
 				47BCCAA32A4F1AA900BA77B4 /* DataController.swift */,
 				4785E5CF2A4F1A08004EFA1E /* Assets.xcassets */,
 				4785E5D12A4F1A08004EFA1E /* Preview Content */,
-				47BCCAB42A4F26AE00BA77B4 /* CoreDataProject.xcdatamodeld */,
 			);
 			path = CoreDataProject;
 			sourceTree = "<group>";
@@ -145,8 +154,11 @@
 			files = (
 				4785E5CE2A4F1A07004EFA1E /* ContentView.swift in Sources */,
 				47BCCAA42A4F1AA900BA77B4 /* DataController.swift in Sources */,
-				47BCCAB62A4F26AE00BA77B4 /* CoreDataProject.xcdatamodeld in Sources */,
 				4785E5CC2A4F1A07004EFA1E /* CoreDataProjectApp.swift in Sources */,
+				4782303A2A5073D600C97DDE /* CoreDataProject.xcdatamodeld in Sources */,
+				4782303E2A5074C200C97DDE /* Candy+CoreDataProperties.swift in Sources */,
+				478230372A50722400C97DDE /* FilteredList.swift in Sources */,
+				4782303D2A5074C200C97DDE /* Candy+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,12 +359,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		47BCCAB42A4F26AE00BA77B4 /* CoreDataProject.xcdatamodeld */ = {
+		478230382A5073D600C97DDE /* CoreDataProject.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				47BCCAB52A4F26AE00BA77B4 /* CoreDataProject.xcdatamodel */,
+				478230392A5073D600C97DDE /* CoreDataProject.xcdatamodel */,
 			);
-			currentVersion = 47BCCAB52A4F26AE00BA77B4 /* CoreDataProject.xcdatamodel */;
+			currentVersion = 478230392A5073D600C97DDE /* CoreDataProject.xcdatamodel */;
 			path = CoreDataProject.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
