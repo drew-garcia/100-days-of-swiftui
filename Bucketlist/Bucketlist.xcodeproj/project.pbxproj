@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		47E3C0462A54DAB10028E681 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E3C0452A54DAB10028E681 /* Location.swift */; };
 		47E3C0482A54DCF60028E681 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E3C0472A54DCF60028E681 /* EditView.swift */; };
+		47E3C04A2A54E01B0028E681 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E3C0492A54E01B0028E681 /* Result.swift */; };
 		47F81EBA2A533C610050D81F /* BucketlistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F81EB92A533C610050D81F /* BucketlistApp.swift */; };
 		47F81EBC2A533C610050D81F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F81EBB2A533C610050D81F /* ContentView.swift */; };
 		47F81EBE2A533C620050D81F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47F81EBD2A533C620050D81F /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 		47E3C0422A549EA10028E681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		47E3C0452A54DAB10028E681 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		47E3C0472A54DCF60028E681 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		47E3C0492A54E01B0028E681 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		47F81EB62A533C610050D81F /* Bucketlist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bucketlist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F81EB92A533C610050D81F /* BucketlistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketlistApp.swift; sourceTree = "<group>"; };
 		47F81EBB2A533C610050D81F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				47E3C0422A549EA10028E681 /* Info.plist */,
 				47F81EB92A533C610050D81F /* BucketlistApp.swift */,
 				47F81EBB2A533C610050D81F /* ContentView.swift */,
+				47E3C0492A54E01B0028E681 /* Result.swift */,
 				47E3C0472A54DCF60028E681 /* EditView.swift */,
 				47E3C0452A54DAB10028E681 /* Location.swift */,
 				47F81EBD2A533C620050D81F /* Assets.xcassets */,
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47F81EBC2A533C610050D81F /* ContentView.swift in Sources */,
+				47E3C04A2A54E01B0028E681 /* Result.swift in Sources */,
 				47E3C0462A54DAB10028E681 /* Location.swift in Sources */,
 				47E3C0482A54DCF60028E681 /* EditView.swift in Sources */,
 				47F81EBA2A533C610050D81F /* BucketlistApp.swift in Sources */,
