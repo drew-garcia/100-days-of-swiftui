@@ -25,11 +25,13 @@ struct ContentView: View {
                 }
                 
                 Section {
-                    ForEach(usedWords, id: \.self) { word in
+                    List(usedWords, id: \.self) { word in
                         HStack {
                             Image(systemName: "\(word.count).circle")
                             Text(word)
                         }
+                        .accessibilityElement(children: .ignore)
+                        .accessibilityLabel("\(word), \(word.count) letters")
                     }
                 }
             }
@@ -65,19 +67,19 @@ struct ContentView: View {
         
         guard answer != rootWord else {
             wordError(title: "Nice try…", message: "You can't use your starting word!")
-           return
+            return
         }
         
         guard isOriginal(word: answer) else {
             wordError(title: "Word used already", message: "Be more original")
             return
         }
-
+        
         guard isPossible(word: answer) else {
             wordError(title: "Word not possible", message: "You can't spell that word from '\(rootWord)'!")
             return
         }
-
+        
         guard isReal(word: answer) else {
             wordError(title: "Word not recognized", message: "You can't just make them up, you know!")
             return
@@ -100,15 +102,15 @@ struct ContentView: View {
             if let startWords = try? String(contentsOf: startWordsURL) {
                 // 3. Split the string up into an array of strings, splitting on line breaks
                 let allWords = startWords.components(separatedBy: "\n")
-
+                
                 // 4. Pick one random word, or use "silkworm" as a sensible default
                 rootWord = allWords.randomElement() ?? "silkworm"
-
+                
                 // If we are here everything has worked, so we can exit
                 return
             }
         }
-
+        
         // If were are *here* then there was a problem – trigger a crash and report the error
         fatalError("Could not load start.txt from bundle.")
     }
@@ -119,7 +121,7 @@ struct ContentView: View {
     
     func isPossible(word: String) -> Bool {
         var tempWord = rootWord
-
+        
         for letter in word {
             if let pos = tempWord.firstIndex(of: letter) {
                 tempWord.remove(at: pos)
@@ -127,7 +129,7 @@ struct ContentView: View {
                 return false
             }
         }
-
+        
         return true
     }
     
@@ -135,7 +137,7 @@ struct ContentView: View {
         let checker = UITextChecker()
         let range = NSRange(location: 0, length: word.utf16.count)
         let misspelledRange = checker.rangeOfMisspelledWord(in: word, range: range, startingAt: 0, wrap: false, language: "en")
-
+        
         return misspelledRange.location == NSNotFound
     }
     
