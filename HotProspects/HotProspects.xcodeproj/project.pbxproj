@@ -12,6 +12,7 @@
 		4741C92A2A5742320058042A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4741C9292A5742320058042A /* ContentView.swift */; };
 		4741C92C2A5742330058042A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4741C92B2A5742330058042A /* Assets.xcassets */; };
 		4741C92F2A5742330058042A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4741C92E2A5742330058042A /* Preview Assets.xcassets */; };
+		476A4F6D2A5B84DB00EEC5F1 /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476A4F6C2A5B84DB00EEC5F1 /* ImageSaver.swift */; };
 		47BE6CC72A58C7DD0053137A /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BE6CC62A58C7DD0053137A /* ProspectsView.swift */; };
 		47BE6CC92A58C8010053137A /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BE6CC82A58C8010053137A /* MeView.swift */; };
 		47BE6CCB2A58CA360053137A /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BE6CCA2A58CA360053137A /* Prospect.swift */; };
@@ -23,6 +24,7 @@
 		4741C9292A5742320058042A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4741C92B2A5742330058042A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4741C92E2A5742330058042A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		476A4F6C2A5B84DB00EEC5F1 /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 		47BE6CC62A58C7DD0053137A /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
 		47BE6CC82A58C8010053137A /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
 		47BE6CCA2A58CA360053137A /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				4741C9292A5742320058042A /* ContentView.swift */,
 				47BE6CCA2A58CA360053137A /* Prospect.swift */,
 				47BE6CC82A58C8010053137A /* MeView.swift */,
+				476A4F6C2A5B84DB00EEC5F1 /* ImageSaver.swift */,
 				47BE6CC62A58C7DD0053137A /* ProspectsView.swift */,
 				4741C92B2A5742330058042A /* Assets.xcassets */,
 				4741C92D2A5742330058042A /* Preview Content */,
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47BE6CC92A58C8010053137A /* MeView.swift in Sources */,
+				476A4F6D2A5B84DB00EEC5F1 /* ImageSaver.swift in Sources */,
 				47BE6CCB2A58CA360053137A /* Prospect.swift in Sources */,
 				47BE6CC72A58C7DD0053137A /* ProspectsView.swift in Sources */,
 				4741C92A2A5742320058042A /* ContentView.swift in Sources */,
@@ -293,6 +297,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR codes.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save your QR code.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -323,6 +328,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR codes.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save your QR code.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
