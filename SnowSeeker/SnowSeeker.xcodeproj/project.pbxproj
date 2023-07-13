@@ -69,17 +69,17 @@
 		472642572A602F8300DA23F2 /* SnowSeeker */ = {
 			isa = PBXGroup;
 			children = (
+				47E0D3802A603B61009CBFB1 /* resorts.json */,
+				47E0D37E2A6038A0009CBFB1 /* Bundle-Decodable.swift */,
+				4726425A2A602F8300DA23F2 /* ContentView.swift */,
 				47E0D38C2A604142009CBFB1 /* Facility.swift */,
 				47E0D38A2A60400D009CBFB1 /* Favorites.swift */,
-				47E0D3862A603E87009CBFB1 /* SkiDetailsView.swift */,
-				47E0D3882A603EA5009CBFB1 /* ResortDetailsView.swift */,
-				47E0D3802A603B61009CBFB1 /* resorts.json */,
-				472642582A602F8300DA23F2 /* SnowSeekerApp.swift */,
-				4726425A2A602F8300DA23F2 /* ContentView.swift */,
-				47E0D3842A603E51009CBFB1 /* ResortView.swift */,
-				47E0D3822A603BE4009CBFB1 /* WelcomeView.swift */,
 				47E0D37C2A603830009CBFB1 /* Resort.swift */,
-				47E0D37E2A6038A0009CBFB1 /* Bundle-Decodable.swift */,
+				47E0D3882A603EA5009CBFB1 /* ResortDetailsView.swift */,
+				47E0D3842A603E51009CBFB1 /* ResortView.swift */,
+				47E0D3862A603E87009CBFB1 /* SkiDetailsView.swift */,
+				472642582A602F8300DA23F2 /* SnowSeekerApp.swift */,
+				47E0D3822A603BE4009CBFB1 /* WelcomeView.swift */,
 				4726425C2A602F8600DA23F2 /* Assets.xcassets */,
 				4726425E2A602F8600DA23F2 /* Preview Content */,
 			);
